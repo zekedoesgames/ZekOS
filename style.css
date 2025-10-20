@@ -4,6 +4,9 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
 }
 
 header {
@@ -43,6 +46,7 @@ nav a.active {
   padding: 2rem;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  flex: 1; 
 }
 
 .section {
@@ -73,7 +77,7 @@ footer {
   background: #222;
   color: #999; 
   padding: 1rem;
-  margin-top: 2rem;
+  margin-top: 0; 
 }
 
 pre {
@@ -82,4 +86,11 @@ pre {
   text-align: left;
   border-radius: 5px;
   overflow-x: auto;
+}
+
+@media (max-width: 768px) {
+  .content {
+    margin: 1rem;
+    padding: 1rem;
+  }
 }
